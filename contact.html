@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <title>Javascript</title>
+  <script type="text/javascript">
+    function lettersOnly(input){
+      var regex = /[^a-z]/gi;
+      input.value = input.value.replace(regex,"");
+    }
+  </script>
+
+
+</head>
+<link rel="stylesheet" href="contact.css"
+<body>
+
+  <div class="topnav">
+    <a href="HomeAssignment.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+    <a href="games.html">Games</a>
+    <div class="login-container">
+     
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <p>Contact Us </p> 
+
+    <div class="login">
+<input type="text" class="input" placeholder="Your Name and Surname"onkeyup="lettersOnly(this)">
+<input type="email" class="input" placeholder="Your Email Address">
+
+
+</div>
+
+<div class="phonenumber">
+  <input type="number" class="input" placeholder="Your Phonenumber">
+  </div>
+
+  <div class="msg">
+<textarea class="area" placeholder="Leave a Message"></textarea>
+</div>
+  
+  <div class="btn">Send Message</div>
+  
+
+
+  </div>
+</body>
+</html>
